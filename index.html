@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .background-filter {
+            width: 100%;
+            height: 100%;
+            background-image: url(./backgrounf.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: fixed;
+            top: 0;
+            z-index: -1;
+            opacity: 0.5;
+            overflow: hidden;
+        }
+        .main-container {  
+            height: 100vh;
+        }
+        .title {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 20%;
+            z-index: 2;
+            position: relative;
+        }
+        .title-1 {
+            width: 20rem;
+            height: 9rem;
+            position: fixed;
+        }
+        .description {
+            text-align: justify;
+            text-indent: 8%;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 14px;   
+        }
+        ::-webkit-scrollbar{
+            display: none;
+        }
+        .content {
+            width: fit-content;
+            display: flex;
+            align-items: center;
+            z-index: 3;
+            flex-direction: row;
+            
+            overflow-x: scroll;
+            position: relative;
+        }
+        .content .item-cont img {
+            width: 10cm;
+            height: 7cm;
+        }
+        .item-cont {
+            width: fit-content;
+            position: relative;
+            overflow: hidden;
+        }
+        .item-cont .description {
+            position: absolute;
+            background-color: rgba(208, 208, 208, 0.748);
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+        .item-cont:hover .description {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+   <div class="main-container">
+       <div class="title">
+           <img class="title-1" src="./KHR-logo.png" alt="">
+           <img src="" alt="">
+       </div>
+       <!-- (1) CHARACTERS -->
+       <div class="content">
+            <div class="item-cont">
+                <img src="./(6) Chrome-Mukuro.png" alt="">
+                <div class="description">
+                <p>"Chrome is one of Tsuna's Friends and the Vongola's Guardian of the Mist. 
+                    When chrome is in grave danger or faced death, Mukuro appears and 
+                    swtich places with her, the true Vongola's Guardian of the Mist. 
+                    Despite he doesn't want to be involed with the mafia, with Tsuna's father request, 
+                    he agrees and offer up his help but in a mininal and situational dilemma only."</p>
+                </div>
+            </div>
+            <div class="item-cont">
+                <img src="./(5) Hibari.png" alt="">
+                <div class="description">
+                <p>"Hibari Kyoya is the Vongola's Guardian of the Cloud. Despite he is not interested
+                    to look after Tsuna and friend, he got his own way to protect them. He joins the mafia 
+                    because he is is interested on the way of living of Reborn."</p>
+                </div>
+            </div>
+            <div class="item-cont">
+                <img src="./(3) Yamamoto.png" alt="">
+                <div class="description">
+                <p>"He is one of Tsuna's close friends and the Vongola's Guardian of the Rain. Despite being a 
+                    happy and baseball person, his calm persona will intimidate you and attack you silently with his samurai."</p>
+                </div>
+            </div>
+           <div class="item-cont">
+                <img src="./(1) Tsuna.png" alt="">
+                <div class="description">
+                <p>"The 10th boss of the Vongola Family and the Family's Guardian of the Sky. His perspective of friendship
+                    gives harmony even for his foes and will fight for what is right for him. He will violate the rules made 
+                    by the previous generations to make things right."</p>
+                </div>
+           </div>
+           <div class="item-cont">
+                <img src="./(2) Gokudera.png" alt="">
+                <div class="description">
+                <p>"Gokudera is a smart person, the right hand of Tsuna, Tsuna's close friend and the 
+                    Vongola's Guardian of the Storm. His recklessness will give oblivion to foes he is ready to offer his life for Tsuna."</p>
+                </div>
+           </div>
+           <div class="item-cont">
+                <img src="./(7) Lambo.png" alt="">
+                <div class="description">
+                <p>"The person who is supposed to assassinate Reborn but instead became an ally because of Tsuna's Mama. He is the youngest 
+                    of the guardian and the Vongola's Guardian of the Lightning. His way to cooperate and protect the family was because of Tsuna's Mama.
+                    Pampering him, taking care of him and candies from Tsuna's Mama."</p>
+                </div>
+           </div>
+           <div class="item-cont">
+                <img src="./(4) Ryohei.png" alt="">
+                <div class="description">
+                <p>"One of Tsuna's friends and the Vongola's Guardian of the Sun. Together with his training in boxing and his agility, his 
+                    ways to protect the family will be at the absolute best. Faster, stronger, better. Instead of getting healed, his sun powers amplifies 
+                    his body for stronger punches."</p>
+                </div>
+           </div>
+       </div>
+       <!-- (2) PERSONALITY/IDENTITY pt. 1 -->
+       <div class="content">
+        <div class="item-cont">
+            <img src="./(6.1) Chrome.jpg" alt="">
+            <div class="description">
+            <p>"Chrome was a member of the Kokuyo JH Gang. A silent aand smart person, her being a vessel of the true Guardian of the Mist, Mukuro, she always gives 
+                her best in the battlefield and analyzes illusions for the team in teamfight strategies and the likes."</p>
+            </div>
+        </div>
+        <div class="item-cont">
+            <img src="./(5.1) Hibari Origin.jpg" alt="">
+            <div class="description">
+            <p>"The leader of the Namimori Disciplinary Committtee, this man is not interest in the mafia but because of Reborn's way of living, he was nominated and 
+                accepted to the Vongola Family. He got his favorite bird, Hibird."</p>
+            </div>
+        </div>
+        <div class="item-cont">
+            <img src="./(3.1) Yamamoto origin.jpg" alt="">
+            <div class="description">
+            <p>"The almost happy go lucky person in the family, this young man has his way of living as a baseball player. Swinging his bat at will, this man never forgets
+                to smile always to give motivation to the familia."</p>
+            </div>
+        </div>
+       <div class="item-cont">
+            <img src="./(1.1) Tsuna X-burner.jpg" alt="">
+            <div class="description">
+            <p>"During his time travel 10 years to the future to defeat Byakuran, he mastered the weapon as unique as first boss of the Vongola Family, the X GLOVES. Mastering
+                the attack X-BURNER, this harmonious attack will reduce his opponents to ashes and in the end, he never forgets to go back to his objective, breaking the Vongola's 
+                tradition to give a new future to other Vongola Familia Generation"</p>
+            </div>
+       </div>
+       <div class="item-cont">
+            <img src="./(2.1) Gokudera Origin.jpg" alt="">
+            <div class="description">
+            <p>"A candidate for the 10th boss of the Vongola Familia, this reckless teen challenged Tsuna but unfortunately he loss and became Tsuna's right hand. Gokudera is a very
+                smart person and uplifts the Familia's intelligence. In the end, he is a lonely person and has his way to love and protect the family."</p>
+            </div>
+       </div>
+       <div class="item-cont">
+            <img src="./(7.1) Lambo kiddo.jpg" alt="">
+            <div class="description">
+            <p>"This 6-year-old hitman is a very jolly, crybaby yet agitating and aggresive kiddo. This hitman has a lot of weapons (and candies) in his woofy black hair and never touch 
+                his horns for they reduce electricty and they are electrically resistant and absorbs electricity too, converting them on his own"</p>
+            </div>
+       </div>
+       <div class="item-cont">
+            <img src="./(4.1) RYohei HS.jpg" alt="">
+            <div class="description">
+            <p>"This teen has his own boxing club in Namimori High. Mastering the art of boxing, this teen plays TO THE EXTREMEEEE!! and this vibe of his surely motivates the family to become stronger.
+                He even do different exercises the family cannot handle on and does challenges the family cannot go in with."</p>
+            </div>
+        </div>
+    </div>
+    <!-- (2.1) PERSONALITY/IDENTITY pt. 2 -->
+    <div class="content">
+        <div class="item-cont">
+            <img src=".//(6.1) Mukoro.jpg" alt="">
+            <div class="description">
+            <p>"Mukuro is the leader of the Kokuyo High Gang and the master of Illusion. THe true guardian of the Mist was arrested by the Vindice because of his strong illusions, stronger ones that people
+                cannot even control or destroy in with. And with that, he has to be captured and be stayed in prison with. However, despite no contact in the outside world, his substitute, CHROME, made a contract
+                with each other. 'I give you illusionary organs as way of living in life but in exchange you will be my vessel in the outside world'."</p>
+            </div>
+        </div>
+        <div class="item-cont">
+            <img src="./(5.1) Hibari 10-yrs.jpg" alt="">
+            <div class="description">
+            <p>"During his 10 year travel to the future, he is feared by his opponents and was entitled the strongest Guardian amongst the Vongola Familia. In charge of the Familia's intel, this man is the master of 
+                tonfas and the only person ever defeated him is Mukuro, in a friendly duel."</p>
+            </div>
+        </div>
+        <div class="item-cont">
+            <img src="./(3.1) Yamamoto sword.jpg" alt="">
+            <div class="description">
+            <p>"During his 10 years travel to the future. Since his father died during that time, he inherited his father's will, the Shigure Souen yu style. Mastering this samurai art alongside with his Rain flame,
+                he is there to tranquilize his opponents and defeat them in one slash."</p>
+            </div>
+        </div>
+       <div class="item-cont">
+            <img src="./(1.1) Tsuna_And_His_Parents.PNG.png" alt="">
+            <div class="description">
+            <p>"Despite being serious to defeat Byakuran, Tsuna is a family man and a timid one to his mother and father, who is also part of the Vongola's skeletal workforce. He had a crush on Ryohei's sister, KYOKO for 
+                her beauty and smile is as pure as daylight."</p>
+            </div>
+       </div>
+       <div class="item-cont">
+            <img src="./(2.1) Gokudera Development.jpg" alt="">
+            <div class="description">
+            <p>"Durin his travel to 10 years in the future, Gokudera masters mulitple box infusion called SISTEMA CAI, an offensive and defensive multicoated flame weapon system to oliberate his opponents at the same time protect the family
+                especially Tsuna."</p>
+            </div>
+       </div>
+       <div class="item-cont">
+            <img src="./(7.1) Lambo 10yrs.jpg" alt="">
+            <div class="description">
+            <p>"During his time travel in 10 years to the future, his sole duty is to protect the Vongola Family and use his defensive powers against strong opponents."</p>
+            </div>
+       </div>
+       <div class="item-cont">
+            <img src="./(4.1) Ryohei 10yrs.jpg" alt="">
+            <div class="description">
+            <p>"During his time travel in the 10 year future, he mastered the art of boxing and amplify its mastery using the Sun injection flame. Instead of healing his body, it amplifies his speed and punching power, allwoing him to reduce his opponents to ashes and dies but that one has a 3 minute limit break. Exceeding beyond it will give him body strains."</p>
+            </div>
+       </div>
+   </div>
+    <!-- (4) ANIMAL/S SIGNATURE-->
+    <div class="content">
+        <div class="item-cont">
+            <img src="./(6.2)Mukuro-Chrome Owl.png" alt="">
+            <div class="description">
+            <p>"This is the Bird-type, Mist attribute box weapon of Chrome and Mukuro upgraded with Vongola Technology. 'Gufo di Nebbia ver. Vongola' (owl) aka MUKUROU."
+                <br>
+                <br>
+                Once in 'cambio forma', this changed into the weapon used by the first generation Vongola Guardian of the Mist,
+                'DAEMON SPADE DEVIL LENS'.</p>
+            </div>
+        </div>
+        <div class="item-cont">
+            <img src="./(5.2) Hibari Hedgehog.png" alt="">
+            <div class="description">
+            <p>"This is the animal-type, cloud attribute box weapon of Hibari upgraded with Vongola Technology. 'Porcospino Nuvola ver. Vongola' (Hedgehog) aka ROLL."
+                <br>
+                <br>
+                Once in 'cambio forma', this changed into the weapon used by the first generation Vongola Guardian of the Cloud,
+                'ALAUDE'S HANDCUFFS'.</p>
+            </div>
+        </div>
+        <div class="item-cont">
+            <img src="./(3.2) Yamamoto two-animals.png" alt="">
+            <div class="description">
+            <p>"These are the animal-type, Rain attribute box weapon of Yamamoto upgraded with Vongola Technology. 'Rondine di Pioggia Ver. Vongola' (swallow) aka KOJIRO 
+                and 'Cane di Pioggia Ver. Vongola' (dog) aka JIRO."
+                <br>
+                <br>
+                Once in 'cambio forma', this changed into the weapon used by the first generation Vongola Guardian of the Rain, 
+                'ASARI UGETSU'S FOUR IRREGULAR'.</p>
+            </div>
+        </div>
+       <div class="item-cont">
+            <img src="./(1.2) Tsuna Lion.png" alt="">
+            <div class="description">
+            <p>"This is the animal-type, Sky attribute box weapon of Tsuna upgraded with Vongola Technology. 'Leone di Cieli ver. Vongola' (Lion) aka NATSU."
+                <br>
+                <br>
+                Once in 'cambio forma modo difesa', this changed into the weapon used by the first generation Vongola Guardian of the Sky, 
+                'MANTELLO DI VONGOLA PRIMO (Vongola First's Cloak)', and;
+                <br>
+                <br>
+                Once in 'cambio forma modo attacco', this combines with Tsuna's X-GLOVES forming
+                'MITENA DI VONGOLA PRIMO (Vongola First's Gloves)'.</p>
+            </div>
+       </div>
+       <div class="item-cont">
+            <img src="./(2.2) Gokudera Cat.png" alt="">
+            <div class="description">
+            <p>"This is the animal-type, Storm attribute box weapon of Gokudera upgraded with Vongola Technology. 'Gatto Tempesta ver. Vongola' (cat) aka URI"
+                <br>
+                <br>
+                Once in 'cambio forma', this changed into the weapon used by the first generation Vongola Guardian of the Storm, 
+                'G'S ARCHERY'.</p>
+            </div>
+       </div>
+       <div class="item-cont">
+            <img src="./(7.2) Lambo Bull.png" alt="">
+            <div class="description">
+            <p>"This is the animal-type, Lightning attribute box weapon of Lambo upgraded with Vongola Technology. 'Bufalo Fulmine ver. Vongola' (Buffalo) aka GYUDON"
+                <br>
+                <br>
+                Once in 'cambio forma', this changed into the weapon used by the first generation Vongola Guardian of the Lightining, 
+                'LAMPO'S SHIELD'.</p>
+            </div>
+       </div>
+       <div class="item-cont">
+            <img src="./(4.2) Ryohei Kangaroo.png" alt="">
+            <div class="description">
+            <p>"This is the animal-type, Sun attribute box weapon of Ryohei upgraded with Vongola Technology. 'Canguro del Sereno ver. Vongola' (Kangaroo) aka GARYU"
+                <br>
+                <br>
+                Once in 'cambio forma', this changed into the weapon used by the first generation Vongola Guardian of the Sun, 
+                'LAMPO'S SHIELD'.</p>
+            </div>
+       </div>
+   </div>
+   <!-- (5) ANIMAL TO WEAPON SIGNATURE -->
+   <div class="content">
+    <div class="item-cont">
+        <img src="./(6.3) Chrome Lens.png" alt="">
+        <div class="description">
+        <p>"Renowned as and elusive phantom; DAEMON SPADE DEVIL LENS". This is the the cambio forma of Mukurou.
+            <br>
+            <br>
+            This animal-to-weapon box of Chrome was coverted into powerful lens, allowing her to see even the strongest illusions made by his/her opponents.
+        No one can fool her anymore.</p>
+        </div>
+    </div>
+    <div class="item-cont">
+        <img src="./(5.3) Hibari Handcuffs.png" alt="">
+        <div class="description">
+        <p>"A relic of the aloof, unfettered cloud who walked his own path; ALAUDE'S HANDCUFFS"<br>
+            <br>
+            <br>
+            This animal-to-weapon box of Hibari was coverted into one handcuff. With his cloud flame attribute, he can lock his opponents and multiplying the cuffs,
+            allowing him to lock them even more and supress them up. No one can get out of them even.</p>
+        </div>
+    </div>
+    <div class="item-cont">
+        <img src="./(3.3) Yamamoto 4 swords.png" alt="">
+        <div class="description">
+        <p>"He who holds the box that is considered a blessed shower to cleanse all; ASARI UGETSU, THE FOUR IRREGULAR SWORDS"<br>
+            <br>
+            <br>
+            This animal-to-weapon box of Yamamoto was coverted into three short swords and converting the Shigure Kintoki into one long blade, allowing him to use the power of the Shigure Soen Ryu sword style in 
+            an amplifying state. No one can get away with his slashes.</p>
+        </div>
+    </div>
+   <div class="item-cont">
+        <img src="./(1.3) Tsuna Cloak.png" alt="">
+        <div class="description">
+        <p>"A weapon from the original Vongola Family. Thus it takes the form of the sky which shines onto all and envelops all; VONGOLA I'S CLOAK, MANTELLO DI VONGOLA PRIMO"<br>
+            <br>
+            <br>
+            This animal-to-weapon box of Tsuna in cambio forma modo difesa was coverted into a cloak used by the first Vongola boss, allowing everything that touches him, either by opponent's attack, will be petrified And
+        nullified.</p>
+        </div>
+   </div>
+   <div class="item-cont">
+        <img src="./(2.3) Gokudera Archer.png" alt="">
+        <div class="description">
+        <p>"A violent gale for wreaking devastation; G'S ARCHERY"
+            <br>
+            <br>
+            This animal-to-weapon box of Gokudera was coverted into a archer-like weapon, allowing him to charge his attack or shoot consecutively. 
+            With that, all of his enemies will be destroyed.</p>
+        </div>
+   </div>
+   <div class="item-cont">
+        <img src="./(7.3) Lambo shield.png" alt="">
+        <div class="description">
+        <p>"The lightning bolt with a hidden kick; LAMPO'S SHIELD".
+        <br>
+        <br>
+        This animal-to-weapon box of Lambo was coverted into a Helmet and a shield with horn, allowing him to defend himself at the same time release an amount of 
+        lightning bolts, allowing him to destroy even the strongest shields of enemies. </p>
+        </div>
+   </div>
+   <div class="item-cont">
+        <img src="./(4.3) Ryohei boxing.png" alt="">
+        <div class="description">
+        <p>"A weapon and situation where the sun illuminates the sky; KNUCKLE MAXIMUM BREAK"
+            <br>
+            <br>
+            The animal-to-weapon of Ryohei was converted uniquely for him. First an injection of sun-class flames will be fired on him, them Garyu combines with 
+            Ryohei, granting him the full armor set of a realtime boxers. With this, he becomes faster and stronger. However, 3 minutes is the limit break for 
+            this one. Beyond that and he will feel the body strains or side effects of the sun-class injected flames.
+        </p>
+        </div>
+   </div>
+</div>
+<!-- (6) ATTACK SPECIALTIES -->
+<div class="content">
+    <div class="item-cont">
+        <img src="./(6.4) Chrome Flame.png" alt="">
+        <div class="description">
+        <p>"The Mist Dying Will Flame of the Sky represents CONSTRUCTION".
+            <br>
+            <br>
+            Mostly used by illusionist, this flame is used to construct 
+            illusions to deceive the opponents.</p>
+        </div>
+    </div>
+    <div class="item-cont">
+        <img src="./(5.4) Hibari Flame.png" alt="">
+        <div class="description">
+        <p>"The Cloud Dying Will Flame of the Sky represents PROPAGATION".
+            <br>
+            <br>
+            This is used for people who wants to multiply whatever they have; 
+            strength, agility, even the things they touch, muscular strength, mostly everything even animals.</p>
+        </div>
+    </div>
+    <div class="item-cont">
+        <img src="./(3.4) Yamamoto Flame.png" alt="">
+        <div class="description">
+        <p>"The Rain Dying Will Flame of the Sky represents TRANQUILITY". 
+            <br>
+            <br>
+            This is used for people who wants to slow down their opponents,
+            weaken them by strike, and negate or cancel the attacks of the opponents.</p>
+        </div>
+    </div>
+   <div class="item-cont">
+        <img src="./(1.4) Tsuna Flame.png" alt="">
+        <div class="description">
+        <p>"Leader of the 6 flames, THe Dying Will Flame of the Sky represents HARMONY". 
+            <br>
+            <br>
+            This is used mostly by the leaders of a group to lead the team or group they are into. Since they 
+            carry the characteristic of HARMONY, it has the ability to petrify their opponents, use its pure powers to reduce theri opponents to ashes and can be combined with other flames to 
+            enhance its harmony.</p>
+        </div>
+   </div>
+   <div class="item-cont">
+        <img src="./(2.4) Gokudera Flame.png" alt="">
+        <div class="description">
+        <p>"The Storm Dying Will Flame of the Sky represents DISINTEGRATION".
+            <br>
+            <br>
+            This is used for people who want to easily reduce their opponemts to ashes, and the flame can be coated to tangible things to easily destroy their opponents."</p>
+        </div>
+   </div>
+   <div class="item-cont">
+        <img src="./(7.4) Lambo Flame.png" alt="">
+        <div class="description">
+        <p>"The Lightning Dying Will Flame of the Sky represents HARDENING".
+            <br>
+            <br>
+            This is used by most people who wants to solidify, strengthen or even toughen up what they want to. They can coat it to themselves
+            or to objects they want to envelope it upon. This is also used to give solid and strengthened heavy attacks to their opponents".</p>
+        </div>
+   </div>
+   <div class="item-cont">
+        <img src="./(4.4) Ryohei Flame.png" alt="">
+        <div class="description">
+        <p>"The Sun Dying Will Flame of the Sky represents ACTIVATION".
+            <br>
+            <br>
+            This is used by people who wants to activate what they want such as cell regeneration or strength amplification. 
+            Sometimes this flame is used for healing.</p>
+        </div>
+   </div>
+</div>
+    </div>
+       <div class="background-filter">
+    </div>
+   </div> 
+   
+</body>   
+</html>
